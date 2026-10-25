@@ -1,0 +1,53 @@
+{
+  "name": "ts-node-project",
+  "version": "0.0.0",
+  "description": "Навчальний проєкт Чернеги ІПЗ-3.01.",
+  "keywords": [
+    "ts",
+    "node",
+    "project",
+    "two",
+    "lab"
+  ],
+  "homepage": "https://github.com/Vladyslav-26/ts-node-project#readme",
+  "bugs": {
+    "url": "https://github.com/Vladyslav-26/ts-node-project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vladyslav-26/ts-node-project.git"
+  },
+  "license": "ISC",
+  "author": "Vladyslav",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup scr/index.ts --format cjs,esm --dts",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check",
+    "typecheck": "tsc --noEmit",
+    "demo": "tsx src/demo.ts",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.7",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^21.2.3",
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.5",
+    "commitlint": "^21.2.3",
+    "eslint": "^10.12.0",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "prettier": "^3.9.10",
+    "tsup": "^8.5.1",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.71.2"
+  }
+}
