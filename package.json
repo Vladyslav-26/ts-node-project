@@ -19,7 +19,7 @@
   },
   "license": "ISC",
   "author": "Vladyslav",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -27,7 +27,7 @@
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check",
+    "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit",
     "demo": "tsx src/demo.ts",
     "prepare": "husky"
