@@ -73,6 +73,6 @@ LOG_LEVEL=debug
 
 ---
 
-Посилання на теги релізів.
-
+Посилання на теги релізів.  
+https://github.com/Vladyslav-26/ts-node-project/tags
 
