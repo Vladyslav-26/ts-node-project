@@ -4,8 +4,8 @@ dotenv.config();
 
 /** Базові функції: */
 
-export function add(a: number, b: number) {
-  return a + b;
+export function add(values: number[]) {
+  return values.reduce((acc, x) => acc + x, 0);
 }
 
 export function capitalize(s: string) {
